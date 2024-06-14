@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Resgate - RescueRide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitar Resgate</h1>
+        <form>
+            <label for="tipo-resgate">Tipo de resgate</label>
+            <select id="tipo-resgate" name="tipo-resgate">
+                <option value="guincho">Guincho</option>
+                <option value="chaveiro">Chaveiro</option>
+                <option value="bateria">Bateria</option>
+            </select>
+            
+            <label for="localizacao">Localização do veículo</label>
+            <div id="mapa"></div>
+            
+            <label for="descricao">Descrição do problema</label>
+            <textarea id="descricao" name="descricao"></textarea>
+            
+            <label for="fotos">Fotos do veículo (opcional)</label>
+            <input type="file" id="fotos" name="fotos" multiple>
+            
+            <button type="submit">Confirmar solicitação</button>
+            <button type="button">Cancelar solicitação</button>
+        </form>
+    </div>
+</body>
+</html>
